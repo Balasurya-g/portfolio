@@ -4,11 +4,13 @@ body{
     font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 header{
+    display: flex;
     position: fixed;
     background-color: rgba(38, 28, 101, 0.523);
     color: rgba(0, 255, 255, 0.795);
     padding: 20px;
     box-shadow: 0,0,10,white;
+    width: 100%;
 }
 .name-head{
     margin-left: 30px;
@@ -17,10 +19,13 @@ header{
     font-weight: bold;
 }
 .contact{
-    display: inline-block;
+    width: 400px;
+    display: flex;
     margin-left: 900px;
+    margin-right: 50px;
 }
 .contact a{
+    flex-basis: 20%;
     text-decoration: none;
     color: rgba(0, 255, 255, 0.795);
     margin-left: 25px;
@@ -180,5 +185,75 @@ form{
     display: inline-block;
 }
 .submit{
-    margin-top: 280px;
+    margin-top: 280px;  
+    
+}
+#about{
+    margin-top: 350px;
+    padding-top: 50px;
+    font-size: 10px;
+}
+#projectspace{
+    margin-top: 100px;
+    padding-top: 30px;
+}
+#contactspace{
+    margin-top: 150px;
+    padding-top: 200px;
+    padding-bottom: 50px;
+}
+@media (max-width:421px){
+    .contact {
+        position: sticky;
+        display: block;
+        margin-top: 40px;
+        margin-left: 0px;
+        left: 10px;
+    }
+    .info{
+        display: inline-block;
+        width: 250px;
+        margin-left: 50px;
+        margin-top: 200px;
+    }
+    .Letstalk{
+        margin-left: 196px;
+        margin-top: 20px;
+    }
+    .project-grid{
+        grid-template-columns: 1fr;
+        margin-left: 30px;
+    }
+    hr{
+        display: none;
+    }
+    #about{
+        margin-top: 150px;
+        padding-top: 20px;
+        font-size: 10px;
+    }
+    #about p{
+        font-size: 10px;
+    }
+    #projectspace{
+        margin-top: 70px;
+        padding-top: 30px;
+    }
+    #projectspace #phead{
+        margin-left: 40px;
+        font-size: 20px;
+    }
+    #contactspace .contactinfo{
+        margin-top: 50px;
+        padding-bottom: 400px;
+        margin-left: 60px;
+    }
+    .name-head{
+        margin-left: 30px;
+        display: inline-block;
+        font-size: larger;
+        font-weight: bold;
+        position: static;
+    }
+
 }

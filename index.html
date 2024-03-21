@@ -97,8 +97,8 @@ header{
 }
 .Letstalk{
     display: inline-block;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 9px;
+    padding-bottom: 9px;
     padding-left: 30px;
     padding-right: 30px;
     margin-left: 20px;
@@ -278,12 +278,93 @@ display:none;
     .submit{
         display:none;
 }
+}
+.logos{
+    animation-name: logoani;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes logoani{
+    0%{
+        transform: translate(0, 0px);
+    }
+    50%{
+        transform: translate(0,15px);
+    }
+    10%{
+        transform: translate(0, 0px);
+    }
+  
+}
+.nameani{
+    animation-name: nameani;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+@keyframes nameani{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.delayani{
+    animation-name: delayani;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
     
+}
+@keyframes delayani{
+    0%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.paraani{
+    animation-name: paraani;
+    animation-duration: 3s;
+    animation-iteration-count:1;
+    animation-timing-function: ease-in-out;
+}
+@keyframes paraani{
+    from{
+    
+        width: 50%;
+    }
+    to{
+       
+        width: 100%;
+    }
+}
+.infoani{
+    animation-name: infoani;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+
+}
+@keyframes infoani{
+    0%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
         
     </style>
 </head>
 <body id="home">
-    <header>
+    <header class="delayani">
         <div class="name-head">
             BALASURYA
         </div>
@@ -294,20 +375,21 @@ display:none;
             <a href="#contactspace">CONTACT</a>
         </div>
     </header>
-    <div class="info">
-        <p style="font-size:xx-large; color: white;">Hi , Im BALASURYA</p>
-        <P style="color: aqua;"><span style="color: white;">Im a </span>FRONTEND DEVELOPER</P>
-        <p style="color: rgba(255, 255, 255, 0.688);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, earum quisquam quae odio laboriosam eum? Error ea ad pariatur! Numquam!</p>
+    <div class="info infoani">
+        <p class="nameani" style="font-size:xx-large; color: white; margin: 15px; margin-left: 0px;">Hi , Im BALASURYA</p>
+        <P  style="color: aqua; display: inline-block; margin: 5px;"><span style="color: white;">Im a </span>FRONTEND DEVELOPER</P>
+        <p class="paraani" style="color: rgba(255, 255, 255, 0.688);">Recent programming program graduate planning to use my internship experience and desire to learn in a front-end developer role where I can create influential coding solutions.</p>
     </div><br>
-    <div class="buttons">
-        <button class="hireme">Hire Me</button>
-        <button class="Letstalk">Let's Talk</button>
+    <div class="buttons infoani">
+        <button class="hireme delayani">Hire Me</button>
+        <button class="Letstalk delayani">Let's Talk</button>
     </div>
    
     <div id="about">
     
     <p class="aboutp" style="color: rgba(0, 255, 255, 0.795); margin-left: 70px; font-size:55px ;font-weight: 500;">ABOUT</p>
-    <p class="aboutp" style="color: white; margin-left: 80px; font-size: 25px;"> Expertise in <span><img src="../portfolio/html.png" style="margin-top: 40px; display: flex; margin-left: 200px;" width="150px"></span><span><img src="../portfolio/css.png" width="150px"style=" margin-top: 40px; display: flex; margin-left: 200px;"></span></p>
+    <p class="aboutp" style="color: white; margin-left: 80px; font-size: 25px;"> Expertise in </p>
+    <div > <img class="logos" src="../portfolio/html.png" style="margin-top: 40px; display: flex; margin-left: 200px; -webkit-filter:drop-shadow(0.5px 0.5px 5px #fff); filter: drop-shadow(0.5px 0.5px 5px #fff);" width="150px"><img class="logos" src="../portfolio/css.png" width="150px"style=" margin-top: 40px; display: flex; margin-left: 200px;  "></div>
     </div>
    
     <div id="projectspace">

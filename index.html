@@ -4,18 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Balasurya</title>
-    <link rel="stylesheet" href="./portfolio.css">
+
     <script src="https://kit.fontawesome.com/7a2e568f21.js" crossorigin="anonymous"></script>
     <style>
         body{
     margin: 0%;
-    background-image: url(./portfolio\ background.jpg);
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    background-color: #020202;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+}
+.avatar{  
+    animation: avatarani ease-in-out 3s  ;  
+    position: absolute;
+    right: 200px;
+    top: 170px;
+    width: 350px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 45px rgba(0, 255, 255, 0.795);
+
+}
+
+
+
+@keyframes avatarani{
+    from{
+        transform: translateX(150px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+@keyframes glow{
+  
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 header{
     display: flex;
     position: fixed;
-    background-color: rgba(38, 28, 101, 0.523);
+    background-color: rgba(25, 25, 25, 0.573);
     color: rgba(0, 255, 255, 0.795);
     padding: 20px;
     box-shadow: 0,0,10,white;
@@ -30,6 +61,7 @@ header{
 .contact{
     width: 400px;
     display: flex;
+    align-items: center;
     margin-left: 900px;
     margin-right: 50px;
 }
@@ -153,8 +185,10 @@ html{
     border-radius: 30px;
     color: rgb(28, 20, 74);
     font-weight: 700;
-transition: 0.15s;
-cursor: pointer;
+    transition: 0.15s;
+    cursor: pointer;
+    outline: none;
+    border: none;
 }
 .download:hover{
     transform:scale(1.025);
@@ -168,10 +202,13 @@ cursor: pointer;
     background-color: rgba(255, 255, 255, 0.722);
     border-radius: 30px rgba(0, 255, 255, 0.795);
     padding-left: 20px;
+    outline: none;
+    border: none;
+    padding-left: 50px;
 
 }
 .name::placeholder{
-    padding-left: 20px;
+    padding-left: 0px;
     color: rgb(28, 20, 74);
     font-size: 14px;
     
@@ -181,6 +218,7 @@ cursor: pointer;
     font-size: 20px;
   
 }
+
 .contacthub{
     display: grid;
     grid-template-columns: 500px 500px 200px;
@@ -196,11 +234,12 @@ form{
 .submit{
     margin-top: 280px;  
     
+    
 }
 #about{
-    margin-top: 350px;
+    margin-top: 400px;
     padding-top: 50px;
-    font-size: 10px;
+    font-size: 6px;
 }
 #projectspace{
     margin-top: 100px;
@@ -212,7 +251,12 @@ form{
     padding-bottom: 50px;
 }
 @media (max-width:421px){
-  
+   body{
+    padding-bottom: 150px;
+   }
+  .avatar{
+    display: none;
+  }
     .contact {
         position: sticky;
         display: block;
@@ -225,7 +269,7 @@ form{
         display: inline-block;
         width: 250px;
         margin-left: 50px;
-        margin-top: 200px;
+        margin-top: 150px;
     }
     .Letstalk{
         margin-left: 196px;
@@ -292,7 +336,7 @@ display:none;
     50%{
         transform: translate(0,15px);
     }
-    10%{
+    100%{
         transform: translate(0, 0px);
     }
   
@@ -322,7 +366,7 @@ display:none;
     0%{
         opacity: 0;
     }
-    90%{
+    80%{
         opacity: 0;
     }
     100%{
@@ -354,7 +398,7 @@ display:none;
 }
 @keyframes infoani{
     0%{
-        transform: translateY(-50px);
+        transform: translateY(-90px);
     }
     100%{
         transform: translateY(0px);
@@ -363,7 +407,8 @@ display:none;
         
     </style>
 </head>
-<body id="home">
+<body id="home" >
+    <img class="avatar blink glow" src="./RA406727_-_Copy-removebg.png" alt="">
     <header class="delayani">
         <div class="name-head">
             BALASURYA
@@ -376,9 +421,9 @@ display:none;
         </div>
     </header>
     <div class="info infoani">
-        <p class="nameani" style="font-size:xx-large; color: white; margin: 15px; margin-left: 0px;">Hi , Im BALASURYA</p>
-        <P  style="color: aqua; display: inline-block; margin: 5px;"><span style="color: white;">Im a </span>FRONTEND DEVELOPER</P>
-        <p class="paraani" style="color: rgba(255, 255, 255, 0.688);">Recent programming program graduate planning to use my internship experience and desire to learn in a front-end developer role where I can create influential coding solutions.</p>
+        <p  style="font-size:xx-large; color: white; margin: 15px; margin-left: 0px;">Hi , Im BALASURYA</p>
+        <P class="nameani delayani" style="color: aqua; display: inline-block; margin: 5px;"><span style="color: white;">Im a </span>FRONTEND DEVELOPER</P>
+        <p class="paraani " style="color: rgba(255, 255, 255, 0.688);">Recent programming program graduate planning to use my internship experience and desire to learn in a front-end developer role where I can create influential coding solutions.</p>
     </div><br>
     <div class="buttons infoani">
         <button class="hireme delayani">Hire Me</button>
@@ -389,7 +434,7 @@ display:none;
     
     <p class="aboutp" style="color: rgba(0, 255, 255, 0.795); margin-left: 70px; font-size:55px ;font-weight: 500;">ABOUT</p>
     <p class="aboutp" style="color: white; margin-left: 80px; font-size: 25px;"> Expertise in </p>
-    <div > <img class="logos" src="../portfolio/html.png" style="margin-top: 40px; display: flex; margin-left: 200px; -webkit-filter:drop-shadow(0.5px 0.5px 5px #fff); filter: drop-shadow(0.5px 0.5px 5px #fff);" width="150px"><img class="logos" src="../portfolio/css.png" width="150px"style=" margin-top: 40px; display: flex; margin-left: 200px;  "></div>
+    <div class="coursel" > <img class="logos" src="../portfolio/html.png" style="margin-top: 40px; display: flex; margin-left: 200px; -webkit-filter:drop-shadow(0.5px 0.5px 5px #fff); filter: drop-shadow(0.5px 0.5px 5px #fff);" width="150px"><img class="logos" src="../portfolio/css.png" width="150px"style=" margin-top: 40px; display: flex; margin-left: 200px;-webkit-filter:drop-shadow(0.5px 0.5px 5px #fff); filter: drop-shadow(0.5px 0.5px 5px #fff);  "></div>
     </div>
    
     <div id="projectspace">
@@ -441,7 +486,7 @@ display:none;
          <input class="name" type="text-area" placeholder="Your message" style="width: 100%; height: 150px; border-radius: 10px;" >
         </div>
         <div class="submit">
-            <button class="download" value="Download CV"><i class="fa-solid fa-paper-plane" style="font-size: 14px;"></i>  Submit</button>
+            <button class="download" value="submit"><i class="fa-solid fa-paper-plane" style="font-size: 14px;"></i>  Submit</button>
 
         </div>
 </div>

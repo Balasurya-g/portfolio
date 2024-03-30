@@ -102,7 +102,7 @@ header{
     background-color: rgba(0, 255, 255, 0.795);  
     
 }
-.visit{
+ .visit{
     padding-top: 8px;
     padding-bottom: 8px;
     padding-left: 30px;
@@ -115,7 +115,7 @@ header{
     font-weight: 600;
     transition: 0.25s;
     margin-left: 20px;
-    margin-bottom: 10px;
+    margin-top: 20px;
 }
 .visit:hover{
     color: rgb(38, 28, 101);
@@ -154,6 +154,7 @@ header{
     border-radius: 5px;
     color: white;
     box-shadow: rgba(0, 255, 255, 0.795)(10 20 30);
+    padding-bottom: 20px;
 } 
 .project-grid{
     display: grid;
@@ -231,9 +232,7 @@ form{
     display: inline-block;
 }
 .submit{
-    margin-top: 280px;  
-    
-    
+    margin-top: 280px;    
 }
 #about{
     margin-top: 400px;
@@ -242,7 +241,7 @@ form{
 }
 #projectspace{
     margin-top: 100px;
-    padding-top: 30px;
+    padding-top: 50px;
 }
 #contactspace{
     margin-top: 150px;
@@ -290,7 +289,8 @@ form{
         font-size: 10px;
     }
     #projectspace{
-        margin-top: 70px;
+        padding-top: 50px;
+        margin-top: 100px;
         padding-top: 30px;
     }
     #projectspace #phead{
@@ -403,7 +403,15 @@ display:none;
         transform: translateY(0px);
     }
 }
-        
+   .coursel{
+    position: relative;
+   }
+   .logos3{
+    position: absolute;
+    top: 100px;
+    left: 450px;
+   }
+
     </style>
 </head>
 <body id="home" >
@@ -433,7 +441,7 @@ display:none;
     
     <p class="aboutp" style="color: rgba(0, 255, 255, 0.795); margin-left: 70px; font-size:55px ;font-weight: 500;">ABOUT</p>
     <p class="aboutp" style="color: white; margin-left: 80px; font-size: 25px;"> Expertise in </p>
-    <div class="coursel" > <img class="logos" src="./html.png" style="margin-top: 40px; display: flex; margin-left: 200px; -webkit-filter:drop-shadow(0.5px 0.5px 5px #fff); filter: drop-shadow(0.5px 0.5px 5px #fff);" width="150px"><img class="logos" src="./css.png" width="150px"style=" margin-top: 40px; display: flex; margin-left: 200px;-webkit-filter:drop-shadow(0.5px 0.5px 5px #fff); filter: drop-shadow(0.5px 0.5px 5px #fff);  "></div>
+    <div class="coursel" > <img class="logos" src="./html.png" style="margin-top: 40px; display: flex; margin-left: 200px; -webkit-filter:drop-shadow(0.5px 0.5px 5px #fff); filter: drop-shadow(0.5px 0.5px 5px #fff);" width="150px"><img class="logos" src="./css.png" width="150px"style=" margin-top: 40px; display: flex; margin-left: 200px;-webkit-filter:drop-shadow(0.5px 0.5px 5px #fff); filter: drop-shadow(0.5px 0.5px 5px #fff);  "><img class="logos3 logos" src="./js.png" style=" display: flex;  -webkit-filter:drop-shadow(0.5px 0.5px 5px #fff); filter: drop-shadow(0.5px 0.5px 5px #fff);" width="150px"></div>
     </div>
    
     <div id="projectspace">
@@ -445,25 +453,25 @@ display:none;
             <div class="top">
                 <img src="./Screenshot 2024-03-06 180429.png" width="100%">
             </div>
-            <p style="font-size: 20px; font-weight: 400; margin: 0%; margin-left: 10px; margin-top: 10px; font-weight: 600;">Youtube Duplicate</p>
+            <p style="font-size: 20px; font-weight: 400; margin: 0%; margin-left: 10px; margin-top: 10px; font-weight: 600;">Responsive Youtube homepage replica</p>
             <p style="margin-left: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad rerum eligendi odit non consectetur ea.</p>
-            <button class="visit">Visit</button>
-         </div>
+            <a href="https://balasurya-g.github.io/youtube-live/" target="_blank" rel="noopener noreferrer"> <button class="visit">Visit</button></a>
+        </div>
+         <div class="card">
+            <div class="top">
+                <img src="./game.png" width="100%">
+            </div>
+            <p style="font-size: 20px; font-weight: 400; margin: 0%; margin-left: 10px; margin-top: 10px;">Rock Papper Scissor Game</p>
+            <p style="margin-left: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad rerum eligendi odit non consectetur ea.</p>
+            <a href="https://balasurya-g.github.io/game-live/" target="_blank" rel="noopener noreferrer"> <button class="visit">Visit</button></a>
+        </div>
          <div class="card">
             <div class="top">
                 <img src="./Screenshot 2024-03-06 180429.png" width="100%">
             </div>
             <p style="font-size: 20px; font-weight: 400; margin: 0%; margin-left: 10px; margin-top: 10px;">Youtube Duplicate</p>
             <p style="margin-left: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad rerum eligendi odit non consectetur ea.</p>
-            <button class="visit">Visit</button>
-         </div>
-         <div class="card">
-            <div class="top">
-                <img src="./Screenshot 2024-03-06 180429.png" width="100%">
-            </div>
-            <p style="font-size: 20px; font-weight: 400; margin: 0%; margin-left: 10px; margin-top: 10px;">Youtube Duplicate</p>
-            <p style="margin-left: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad rerum eligendi odit non consectetur ea.</p>
-            <button class="visit">Visit</button>
+           <a href="https://balasurya-g.github.io/youtube-live/" target="_blank" rel="noopener noreferrer"> <button class="visit">Visit</button></a>
          </div>
         </div>
     </project>
